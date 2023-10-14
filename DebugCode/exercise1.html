@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Element</title>
+  </head>
+  <body>
+    <button onclick="toggleElement()">Toggle Element</button>
+    <div id="target" style="display: none">This is the target element.</div>
+
+    <script>
+      function toggleElement() {
+        var element = document.getElementById("target");
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
